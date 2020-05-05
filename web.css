@@ -1,33 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Clicker+Script&display=swap");
 body {
-    font-family: "Times";
-    overflow: hidden;
+    font-family: "Garamond", serif;
+    font-size: 14pt;
+
+    overflow-x: hidden;
+    margin: 0;
+
+    background: url("img/background-e2-wrap-20.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
 }
-body::after {
-    content: "";
-    background: url("img/background-e2-wrap.png");
 
-    /* background-image: url("img/contour-double-flip.svg"); */
-    /* background-image: url("img/background-wrap.png"); */
-    /* background-image: url("img/background-e2-wrap.png"); */
-
-    /* background-size: cover; */
-    background-size: 100%;
-
-    opacity: 0.2;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+a {
+    color: black;
 }
+
+#nav-bar a {
+    text-decoration: none;
+}
+
+h2 {
+    font-variant-caps: small-caps;
+    font-family: "Cinzel", Garamond, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* body::after { */
+/* content: ""; */
+/* background: url("img/background-e2-wrap.png"); */
+
+/* background-image: url("img/contour-double-flip.svg"); */
+/* background-image: url("img/background-wrap.png"); */
+/* background-image: url("img/background-e2-wrap.png"); */
+
+/* background-size: cover; */
+/* background-size: 100%; */
+/* background-repeat: repeat-y; */
+
+/* opacity: 0.2; */
+/* top: 0; */
+/* left: 0; */
+/* bottom: 0; */
+/* right: 0; */
+/* position: absolute; */
+/* z-index: -1; */
+/* } */
 
 #names {
     text-align: center;
-
+    font-family: "Cinzel", Garamond, serif;
     /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
-    font-size: calc(28px + (70 - 28) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(25px + (70 - 25) * ((100vw - 300px) / (1600 - 300)));
     font-variant-caps: small-caps;
+    letter-spacing: 2px;
     padding-top: 1em;
     padding-bottom: 0.25em;
 }
@@ -39,6 +67,10 @@ body::after {
     position: relative;
 }
 
+#name-danielle-no-animate {
+    position: relative;
+}
+
 #name-john {
     animation-name: john-animation;
     animation-duration: 2s;
@@ -46,14 +78,21 @@ body::after {
     position: relative;
 }
 
+#name-john-no-animate {
+    position: relative;
+}
+
 #name-and {
+    font-family: "Clicker Script", Garamond, serif;
     animation-name: fade-in;
     animation-duration: 2s;
     animation-delay: 1.75s;
     animation-fill-mode: forwards;
     opacity: 0;
-    /* font-family: "Mrs Saint Delafield";
-    font-size: 1.5em; */
+}
+
+#name-and-no-animate {
+    font-family: "Clicker Script", Garamond, serif;
 }
 
 #tagline {
@@ -66,6 +105,35 @@ body::after {
     padding-bottom: 1em;
     text-align: center;
     font-weight: bold;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#tagline-no-animate {
+    position: relative;
+    padding-bottom: 1em;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media (min-width: 321px) {
+    #tagline::after {
+        content: "December 5th, 2020 | Pittsburgh, Pennsylvania";
+    }
+    #tagline-no-animate::after {
+        content: "December 5th, 2020 | Pittsburgh, Pennsylvania";
+    }
+}
+
+@media (max-width: 320px) {
+    #tagline::after {
+        content: "Dec 5th, 2020 | Pittsburgh, PA";
+    }
+    #tagline-no-animate::after {
+        content: "Dec 5th, 2020 | Pittsburgh, PA";
+    }
 }
 
 @keyframes danielle-animation {
@@ -117,21 +185,34 @@ body::after {
     /* width: 100%; */
     margin: 0;
     /* border-style: solid; */
+
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
 }
-@media (max-width: 900px) {
+/* @media (max-width: 320px) {
+     #tagline {
+    }
+} */
+
+@media (max-width: 400px) {
     #nav-bar {
         flex-direction: column;
     }
     #nav-bar > div {
         border-style: solid;
-        width: 60%;
+        width: 100%;
         padding-top: 0.2em;
         padding-bottom: 0.2em;
-        border-width: 1px;
-        border-color: gray;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-color: lightgray;
+        background-color: white;
     }
 }
-@media (min-width: 900px) {
+@media (min-width: 399px) {
     #nav-bar {
         flex-direction: row;
     }
@@ -154,8 +235,73 @@ body::after {
 #nav-bar > div:hover {
     text-decoration: underline;
 }
-.content {
+.content-1-col {
     text-align: center;
-    padding: 1em;
+    /* padding: 1em; */
     /* border-style: solid; */
+    /* background-color: lightgreen; */
+    /* margin: 1em; */
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.content-2-col {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1024px;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.content-3-col {
+    display: grid;
+}
+
+@media (max-width: 900px) {
+    .content-2-col {
+        grid-template-rows: 1fr 1fr;
+    }
+    .content-3-col {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 900px) {
+    .content-2-col {
+        grid-template-columns: 1fr 1fr;
+    }
+    .content-3-col {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.content-2-col > div {
+    /* background-color: lightskyblue; */
+    text-align: center;
+    /* border-style: solid; */
+
+    margin: 0 auto;
+
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.events {
+    max-width: 400px;
+}
+
+.content-3-col > div {
+    /* background-color: lightskyblue; */
+    text-align: center;
+    /* border-style: solid; */
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.content-2-col > div > img {
+    max-width: 100%;
+    height: auto;
+    /* border-style: solid;
+    border-width: 1px; */
 }
