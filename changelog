@@ -11,3 +11,11 @@ Wedding Website
 0.3
     No code changes
     Migrated to a new repository
+
+1.0
+    Many changes
+
+1.1
+    Added variable font-size for tagline
+    Added variable font-size for H2
+    Removed bottom border from mobile nav-bar layout
