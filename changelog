@@ -19,3 +19,8 @@ Wedding Website
     Added variable font-size for tagline
     Added variable font-size for H2
     Removed bottom border from mobile nav-bar layout
+
+1.2
+    Shrink photos with Lightroom
+    Strip metadata (should fix firefox rotation issue)
+    No code changes
