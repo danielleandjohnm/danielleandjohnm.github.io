@@ -24,3 +24,13 @@ Wedding Website
     Shrink photos with Lightroom
     Strip metadata (should fix firefox rotation issue)
     No code changes
+
+1.3
+    Fix scrolling issue on index.html by adding overflow-x tag to names div 
+    Add index.html link to nav-bar
+    Minor wording changes to Photo Captions
+    Minor wording changes to FAQ
+    Change format of links
+    Fix Spacing
+
+

@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Clicker+Script&display=swap");
+
+:root {
+    /* --accent-color: #761834; */
+}
+
 body {
     font-family: "Garamond", serif;
     font-size: 14pt;
@@ -12,17 +17,29 @@ body {
 }
 
 a {
-    color: black;
+    color: var(--accent-color);
+    /* background-color: blue; */
+    /* padding: 0.2em; */
+    /* border-style: solid; */
+    /* border-radius: 5px; */
+    /* border-width: 1px; */
+    text-decoration: underline;
 }
 
-#nav-bar a {
-    text-decoration: none;
-}
+/* #nav-bar a {
+   text-decoration: none; 
+} */
 
 h2 {
     font-variant-caps: small-caps;
     font-family: "Cinzel", Garamond, serif;
     font-size: calc(1.3em + (1.5 - 1.3) * ((100vw - 300px) / (1600 - 300)));
+    padding-bottom: 0.75em;
+}
+
+h4 {
+    /* border-style: solid; */
+    margin-top: 0em;
 }
 
 img {
@@ -30,6 +47,8 @@ img {
 }
 
 #names {
+    /* background-color: lightgreen; */
+    overflow-x: hidden; /* Name will start off screen */
     text-align: center;
     font-family: "Cinzel", Garamond, serif;
     /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
@@ -104,7 +123,7 @@ img {
     padding-right: 1em;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 361px) {
     #tagline::after {
         content: "December 5th, 2020 | Pittsburgh, Pennsylvania";
     }
@@ -113,7 +132,7 @@ img {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     #tagline::after {
         content: "Dec 5th, 2020 | Pittsburgh, PA";
     }
@@ -167,7 +186,7 @@ img {
     justify-content: center;
     align-items: center;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     /* width: 100%; */
     margin: 0;
     /* border-style: solid; */
@@ -175,15 +194,20 @@ img {
     border-bottom-style: solid;
     border-bottom-color: black;
     border-bottom-width: 1px;
+
+    /* border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 1px; */
 }
 /* @media (max-width: 320px) {
      #tagline {
     }
 } */
 
-@media (max-width: 400px) {
+@media (max-width: 490px) {
     #nav-bar {
         flex-direction: column;
+        border-top-width: 0px;
         border-bottom-width: 0px;
     }
     #nav-bar > div {
@@ -192,20 +216,29 @@ img {
         padding-top: 0.2em;
         padding-bottom: 0.2em;
         border-top-width: 1px;
-        border-bottom-width: 1px;
+        border-bottom-width: 0px;
         border-left-width: 0px;
         border-right-width: 0px;
-        border-color: lightgray;
+        color: var(--accent-color);
         background-color: white;
     }
+
+    #nav-bar > div:last-child {
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+    }
+
+    #nav-bar a {
+        border-style: none;
+    }
 }
-@media (min-width: 399px) {
+@media (min-width: 491px) {
     #nav-bar {
         flex-direction: row;
     }
     #nav-bar > div {
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 0.6em;
+        margin-right: 0.6em;
 
         padding-left: 1em;
         padding-right: 1em;
@@ -222,6 +255,19 @@ img {
 #nav-bar > div:hover {
     text-decoration: underline;
 }
+
+.page-header {
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1em;
+    padding-bottom: 0em;
+    /* background-color: lightslategray; */
+}
+
 .content-1-col {
     text-align: center;
     /* padding: 1em; */
@@ -230,9 +276,13 @@ img {
     /* margin: 1em; */
     margin-left: 1em;
     margin-right: 1em;
+
     max-width: 500px;
     margin: 0 auto;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 0em;
 }
 
 .content-2-col {
@@ -240,6 +290,11 @@ img {
     margin: 0 auto;
     max-width: 1024px;
     /* background-color: lightgoldenrodyellow; */
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 0em;
+    margin-top: 0em;
 }
 
 .content-3-col {
@@ -272,19 +327,24 @@ img {
 
     padding-left: 1em;
     padding-right: 1em;
+    margin-top: 0em;
+    padding-top: 0em;
 }
 
 .events {
+    margin: 0 auto;
     max-width: 400px;
+    margin-top: 0em;
+    padding-top: 0em;
 }
 
-.content-3-col > div {
-    /* background-color: lightskyblue; */
+/* .content-3-col > div {
+    background-color: lightskyblue;
     text-align: center;
-    /* border-style: solid; */
+    border-style: solid;
     margin-left: 1em;
     margin-right: 1em;
-}
+} */
 
 .content-2-col > div > img {
     max-width: 100%;
