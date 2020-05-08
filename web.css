@@ -123,7 +123,7 @@ img {
     padding-right: 1em;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 491px) {
     #tagline::after {
         content: "December 5th, 2020 | Pittsburgh, Pennsylvania";
     }
@@ -132,7 +132,7 @@ img {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 490px) {
     #tagline::after {
         content: "Dec 5th, 2020 | Pittsburgh, PA";
     }

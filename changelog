@@ -33,4 +33,6 @@ Wedding Website
     Change format of links
     Fix Spacing
 
-
+1.4
+    Add www to CNAME
+    Change media width for shortened tagline to <=490px
