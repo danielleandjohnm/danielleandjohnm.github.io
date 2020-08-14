@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Clicker+Script&display=swap");
 
-:root {
+/* :root {
     /* --accent-color: #761834; */
-}
+/* } */
 
 body {
     font-family: "Garamond", serif;
@@ -321,7 +321,6 @@ img {
     /* -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; */
-}
 }
 
 .content-3-col {
