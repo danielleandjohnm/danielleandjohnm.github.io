@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    color: var(--accent-color);
+    /* color: var(--accent-color); */
     /* background-color: blue; */
     /* padding: 0.2em; */
     /* border-style: solid; */
@@ -26,9 +26,9 @@ a {
     text-decoration: underline;
 }
 
-/* #nav-bar a {
-   text-decoration: none; 
-} */
+#nav-bar a {
+    color: var(--accent-color);
+}
 
 h2 {
     font-variant-caps: small-caps;
@@ -379,6 +379,6 @@ img {
     border-width: 1px; */
 }
 
-#registry-wrapper{
+#registry-wrapper {
     background-color: white;
 }
