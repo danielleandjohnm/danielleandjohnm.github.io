@@ -42,6 +42,11 @@ h4 {
     margin-top: 0em;
 }
 
+h3 {
+    /* border-style: solid; */
+    margin-top: 0em;
+}
+
 img {
     max-width: 100%;
 }
@@ -272,7 +277,7 @@ img {
     text-align: center;
     /* padding: 1em; */
     /* border-style: solid; */
-    /* background-color: lightgreen; */
+    background-color: lightgreen;
     /* margin: 1em; */
     /* margin-left: 1em;
     margin-right: 1em; */
@@ -281,7 +286,7 @@ img {
     margin: 0 auto;
     padding-left: 1em;
     padding-right: 1em;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
     padding-top: 0em;
 }
 
@@ -311,11 +316,11 @@ img {
     display: grid;
     margin: 0 auto;
     max-width: 1024px;
-    /* background-color: lightgoldenrodyellow; */
+    background-color: lightgoldenrodyellow;
     /* border-style: solid; */
     padding-left: 1em;
     padding-right: 1em;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
     padding-top: 0em;
     margin-top: 0em;
     /* -webkit-box-sizing: border-box;
