@@ -130,19 +130,19 @@ img {
 
 @media (min-width: 491px) {
     #tagline::after {
-        content: "December 5th, 2020 | Pittsburgh, Pennsylvania";
+        content: "September 5th, 2021 | Pittsburgh, Pennsylvania";
     }
     #tagline-no-animate::after {
-        content: "December 5th, 2020 | Pittsburgh, Pennsylvania";
+        content: "September 5th, 2021 | Pittsburgh, Pennsylvania";
     }
 }
 
 @media (max-width: 490px) {
     #tagline::after {
-        content: "Dec 5th, 2020 | Pittsburgh, PA";
+        content: "Sept 5th, 2021 | Pittsburgh, PA";
     }
     #tagline-no-animate::after {
-        content: "Dec 5th, 2020 | Pittsburgh, PA";
+        content: "Sept 5th, 2021 | Pittsburgh, PA";
     }
 }
 
